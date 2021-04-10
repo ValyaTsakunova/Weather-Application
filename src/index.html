@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <section class="additionalOptions">
+        <button id="local">Local</button>
+        <button id="history">History</button>
+    </section>
+    <section class="search">
+        <div class="container">
+            <form id="form">
+                <input type="text" id="city" placeholder="Enter your city here..."> 
+                <input type="text" id="country" placeholder="Enter your country here..."> 
+                
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="showWeather">
+        <div class="container">
+            <div class="weather">
+                <div class="image">
+                    <img src="" >
+                </div>
+                <div class="temp"></div>
+                <div class="location"></div>
+                <div class="weatherInfo">
+                    <div class="time"></div>
+                    <div class="feelsLike"></div>
+                    <div class="comment"></div>
+                    <div class="wind"></div>
+                    <div class="speed"></div>
+                    <div class="pressure"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="weatherHistory">
+                <button class="close"></button>
+                <table class="showWeatherHistory-icons">
+                    <tr>
+                        <td>Location</td>
+                        <td><i class="fas fa-thermometer-three-quarters"></i></td>
+                        <td><i class="far fa-compass"></i></td>
+                        <td><i class="fas fa-wind"></i></td>
+                        <td><i class="fas fa-compress-arrows-alt"></i></td>
+                    </tr>
+                </table>
+                <div class="showWeatherHistory"></div>
+                <div class="message"></div>
+                <button id="clear">Clear history</button>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
