@@ -38,7 +38,7 @@ export function saveHistory(data) {
 }
 
 export const getInfo = function info(firstOpt, secondOpt) {
-  fetch(`http://api.weatherstack.com/current?access_key=09e472f963826a15c0f422d0ca58a536&query=${firstOpt},${secondOpt}`).then((response) => response.json()).then((data) => {
+  fetch(`https://api.weatherstack.com/current?access_key=09e472f963826a15c0f422d0ca58a536&query=${firstOpt},${secondOpt}`).then((response) => response.json()).then((data) => {
     getData(data);
     saveHistory(data);
   });
